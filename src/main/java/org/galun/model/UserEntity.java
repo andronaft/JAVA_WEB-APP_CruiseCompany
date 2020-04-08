@@ -12,6 +12,8 @@ public class UserEntity {
     private String role;
     private String login;
     private String password;
+    private int cruiseId;
+    private int excursionId;
 
     @Id
     @Column(name = "ID")
@@ -89,5 +91,25 @@ public class UserEntity {
     @Override
     public int hashCode() {
         return Objects.hash(id, name, surname, role, login, password);
+    }
+
+    @Basic
+    @Column(name = "CRUISE_ID")
+    public int getCruiseId() {
+        return cruiseId;
+    }
+
+    public void setCruiseId(int cruiseId) {
+        this.cruiseId = cruiseId;
+    }
+
+    @Basic
+    @Column(name = "EXCURSION_ID")
+    public int getExcursionId() {
+        return excursionId;
+    }
+
+    public void setExcursionId(int excursionId) {
+        this.excursionId = excursionId;
     }
 }

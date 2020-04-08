@@ -385,7 +385,15 @@
       <DataType>VARCHAR|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="207" parent="178" name="PRIMARY_KEY_2">
+    <column id="207" parent="178" name="CRUISE_ID">
+      <Position>7</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="208" parent="178" name="EXCURSION_ID">
+      <Position>8</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <index id="209" parent="178" name="PRIMARY_KEY_2">
       <ObjectId>49</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <SourceTextLength>72</SourceTextLength>
@@ -393,7 +401,7 @@
       <Unique>1</Unique>
       <AutoCreated>1</AutoCreated>
     </index>
-    <key id="208" parent="178" name="USER_PK">
+    <key id="210" parent="178" name="USER_PK">
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
